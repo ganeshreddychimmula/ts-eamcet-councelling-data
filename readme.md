@@ -2,6 +2,8 @@
 
 An interactive web application designed to help aspiring engineering students in Telangana navigate and explore TS EAPCET (formerly EAMCET) counselling cutoff data for the years 2022, 2023, and 2024. This tool aims to provide insights into admission probabilities by presenting past cutoff ranks for various colleges and branches.
 
+## visit live site at: https://ganeshreddychimmula.github.io/ts-eamcet-councelling-data/
+
 ![](./screenshots/Screenshot%20(118).png)
 
 ## ✨ Features
