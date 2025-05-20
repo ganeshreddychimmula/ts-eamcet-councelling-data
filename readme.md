@@ -4,7 +4,7 @@ An interactive web application designed to help aspiring engineering students in
 
 ## visit live site at: https://ganeshreddychimmula.github.io/ts-eamcet-councelling-data/
 
-![](./screenshots/Screenshot%20(118).png)
+![](./screenshots/Screenshot%20(119).png)
 
 ## ✨ Features
 
