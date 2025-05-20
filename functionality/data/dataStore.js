@@ -1,0 +1,417 @@
+   // ------------------------------------------------------------------------
+    // DATA STORE MODULE
+    // Contains all raw data and mappings.
+    // ------------------------------------------------------------------------
+export const DATA_STORE = {
+        // Existing 2024 data
+        existingCutoffData2024: [
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "CSE", year: 2024, category: "OC_GEN_R1", closingRank: 1399, openingRank: null },
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "ECE", year: 2024, category: "OC_GEN_R1", closingRank: 2954, openingRank: null },
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "CSE", year: 2024, category: "OC_GEN_R1", closingRank: 1850, openingRank: null },
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "ECE", year: 2024, category: "OC_GEN_R1", closingRank: 3740, openingRank: null },
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "AIM", year: 2024, category: "OC_GEN_R1", closingRank: 3172, openingRank: null }, 
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "CSE", year: 2024, category: "OC_GEN_R1", closingRank: 1891, openingRank: null },
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "ECE", year: 2024, category: "OC_GEN_R1", closingRank: 4989, openingRank: null },
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "IT", year: 2024, category: "OC_GEN_R1", closingRank: 3929, openingRank: null },
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "CSE", year: 2024, category: "OC_GEN_R1", closingRank: 1735, openingRank: null },
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "ECE", year: 2024, category: "OC_GEN_R1", closingRank: 7904, openingRank: null },
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "IT", year: 2024, category: "OC_GEN_R1", closingRank: 4228, openingRank: null },
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "CSE", year: 2024, category: "OC_GEN_R1", closingRank: 2441, openingRank: null },
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "ECE", year: 2024, category: "OC_GEN_R1", closingRank: 6219, openingRank: null },
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "IT", year: 2024, category: "OC_GEN_R1", closingRank: 4633, openingRank: null },
+            { collegeAcronym: "GRIET", collegeName: "Gokaraju Rangaraju Institute of Engineering and Technology", branch: "CSE", year: 2024, category: "OC_GEN_R1", closingRank: 3915, openingRank: null },
+            { collegeAcronym: "GRIET", collegeName: "Gokaraju Rangaraju Institute of Engineering and Technology", branch: "ECE", year: 2024, category: "OC_GEN_R1", closingRank: 6372, openingRank: null },
+            { collegeAcronym: "CVRCE", collegeName: "CVR College of Engineering", branch: "CSE", year: 2024, category: "OC_GEN_R1", closingRank: 6032, openingRank: null },
+            { collegeAcronym: "CVRCE", collegeName: "CVR College of Engineering", branch: "ECE", year: 2024, category: "OC_GEN_R1", closingRank: 8911, openingRank: null },
+            { collegeAcronym: "MGIT", collegeName: "Mahatma Gandhi Institute of Technology", branch: "CSE", year: 2024, category: "OC_GEN_R1", closingRank: 5910, openingRank: null },
+            { collegeAcronym: "MGIT", collegeName: "Mahatma Gandhi Institute of Technology", branch: "ECE", year: 2024, category: "OC_GEN_R1", closingRank: 11239, openingRank: null },
+        ],
+        existingCutoffData2023: [
+            { collegeAcronym: "JNTUS", collegeName: "JNTUH College of Engineering, Sultanpur", branch: "CSE", year: 2023, category: "EWS_M_FP", closingRank: 8487, openingRank: null }, 
+            { collegeAcronym: "JNTUS", collegeName: "JNTUH College of Engineering, Sultanpur", branch: "CSE", year: 2023, category: "EWS_F_FP", closingRank: 12737, openingRank: null }, 
+            { collegeAcronym: "JNTUS", collegeName: "JNTUH College of Engineering, Sultanpur", branch: "CSM", year: 2023, category: "EWS_M_FP", closingRank: 18328, openingRank: null }, 
+            { collegeAcronym: "JNTUS", collegeName: "JNTUH College of Engineering, Sultanpur", branch: "CSM", year: 2023, category: "EWS_F_FP", closingRank: 30073, openingRank: null }, 
+            { collegeAcronym: "JNTUS", collegeName: "JNTUH College of Engineering, Sultanpur", branch: "ECE", year: 2023, category: "EWS_F_FP", closingRank: 69674, openingRank: null }, 
+            { collegeAcronym: "GRIET", collegeName: "Gokaraju Rangaraju Institute of Engineering and Technology", branch: "CSE", year: 2023, category: "OC_GEN_FP", closingRank: 2437, openingRank: null }, 
+            { collegeAcronym: "CVRCE", collegeName: "CVR College of Engineering", branch: "CSE", year: 2023, category: "OC_GEN_FP", closingRank: 3211, openingRank: null }, 
+            { collegeAcronym: "KMIT", collegeName: "Keshav Memorial Institute of Technology", branch: "CSE", year: 2023, category: "OC_GEN_FP", closingRank: 3261, openingRank: null }, 
+        ],
+        newData2022_2023: [
+            // JNTUHCEH
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "CSE", year: 2022, category: "OC_M_22FP", openingRank: 1211, closingRank: 1211 },
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "CSE", year: 2022, category: "OC_F_22FP", openingRank: 1211, closingRank: 1685 },
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "CSE", year: 2022, category: "EWS_M_22FP", openingRank: 1446, closingRank: 1446 },
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "CSE", year: 2022, category: "EWS_F_22FP", openingRank: 1446, closingRank: 2161 },
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "CSE", year: 2023, category: "OC_M_23FP", openingRank: null, closingRank: 1400 }, 
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "CSE", year: 2023, category: "OC_F_23FP", openingRank: null, closingRank: 1500 }, 
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "CSE", year: 2023, category: "EWS_M_23FP", openingRank: null, closingRank: 1800 }, 
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "CSE", year: 2023, category: "EWS_F_23FP", openingRank: null, closingRank: 2000 }, 
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "CSE(AI&ML)", year: 2022, category: "OC_M_22FP", openingRank: 2241, closingRank: 2241 },
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "CSE(AI&ML)", year: 2022, category: "OC_F_22FP", openingRank: 2241, closingRank: 2859 },
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "CSE(AI&ML)", year: 2022, category: "EWS_M_22FP", openingRank: 2241, closingRank: 2241 },
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "CSE(AI&ML)", year: 2022, category: "EWS_F_22FP", openingRank: 2241, closingRank: 3194 },
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "CSE(AI&ML)", year: 2023, category: "OC_M_23FP", openingRank: null, closingRank: 2500 }, 
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "CSE(AI&ML)", year: 2023, category: "OC_F_23FP", openingRank: null, closingRank: 3000 }, 
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "CSE(AI&ML)", year: 2023, category: "EWS_M_23FP", openingRank: null, closingRank: 3000 }, 
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "CSE(AI&ML)", year: 2023, category: "EWS_F_23FP", openingRank: null, closingRank: 4000 }, 
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "ECE", year: 2022, category: "OC_M_22FP", openingRank: 3131, closingRank: 3131 },
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "ECE", year: 2022, category: "OC_F_22FP", openingRank: 3131, closingRank: 4485 },
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "ECE", year: 2022, category: "EWS_M_22FP", openingRank: 4399, closingRank: 4399 },
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "ECE", year: 2022, category: "EWS_F_22FP", openingRank: 4399, closingRank: 4485 },
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "ECE", year: 2023, category: "OC_M_23FP", openingRank: null, closingRank: 3500 }, 
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "ECE", year: 2023, category: "OC_F_23FP", openingRank: null, closingRank: 7400 }, 
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "ECE", year: 2023, category: "EWS_M_23FP", openingRank: null, closingRank: 5400 }, 
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "ECE", year: 2023, category: "EWS_F_23FP", openingRank: null, closingRank: 8100 }, 
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "EEE", year: 2022, category: "OC_M_22FP", openingRank: 8792, closingRank: 8792 },
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "EEE", year: 2022, category: "OC_F_22FP", openingRank: 8792, closingRank: 9502 },
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "EEE", year: 2022, category: "EWS_M_22FP", openingRank: 10663, closingRank: 10663 },
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "EEE", year: 2022, category: "EWS_F_22FP", openingRank: 10663, closingRank: 10663 },
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "EEE", year: 2023, category: "OC_M_23FP", openingRank: null, closingRank: 9000 }, 
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "EEE", year: 2023, category: "OC_F_23FP", openingRank: null, closingRank: 9500 }, 
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "EEE", year: 2023, category: "EWS_M_23FP", openingRank: null, closingRank: 10000 }, 
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "EEE", year: 2023, category: "EWS_F_23FP", openingRank: null, closingRank: 10000 }, 
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "MEC", year: 2022, category: "OC_M_22FP", openingRank: 16091, closingRank: 16091 },
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "MEC", year: 2022, category: "OC_F_22FP", openingRank: 16091, closingRank: 16091 },
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "MEC", year: 2022, category: "EWS_M_22FP", openingRank: 17581, closingRank: 17581 },
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "MEC", year: 2022, category: "EWS_F_22FP", openingRank: 17581, closingRank: 22337 },
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "MEC", year: 2023, category: "OC_M_23FP", openingRank: null, closingRank: 15000 }, 
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "MEC", year: 2023, category: "OC_F_23FP", openingRank: null, closingRank: 15000 }, 
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "MEC", year: 2023, category: "EWS_M_23FP", openingRank: null, closingRank: 33000 }, 
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "MEC", year: 2023, category: "EWS_F_23FP", openingRank: null, closingRank: 33000 }, 
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "CIV", year: 2022, category: "OC_M_22FP", openingRank: 12364, closingRank: 12364 },
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "CIV", year: 2022, category: "OC_F_22FP", openingRank: 12364, closingRank: 12364 },
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "CIV", year: 2022, category: "EWS_M_22FP", openingRank: 27475, closingRank: 27475 },
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "CIV", year: 2022, category: "EWS_F_22FP", openingRank: 27475, closingRank: 27475 },
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "CIV", year: 2023, category: "OC_M_23FP", openingRank: null, closingRank: 4000 }, 
+            { collegeAcronym: "JNTUHCEH", collegeName: "JNTUH College of Engineering, Hyderabad", branch: "CIV", year: 2023, category: "OC_F_23FP", openingRank: null, closingRank: 5000 }, 
+            // OUCE
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "CSE", year: 2022, category: "OC_M_22FP", openingRank: 2164, closingRank: 2164 },
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "CSE", year: 2022, category: "OC_F_22FP", openingRank: 2164, closingRank: 2727 },
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "CSE", year: 2022, category: "EWS_M_22FP", openingRank: 2444, closingRank: 2444 },
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "CSE", year: 2022, category: "EWS_F_22FP", openingRank: 2444, closingRank: 2727 },
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "CSE", year: 2023, category: "OC_M_23FP", openingRank: null, closingRank: 2500 }, 
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "CSE", year: 2023, category: "OC_F_23FP", openingRank: null, closingRank: 2700 }, 
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "CSE", year: 2023, category: "EWS_M_23FP", openingRank: null, closingRank: 2700 }, 
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "CSE", year: 2023, category: "EWS_F_23FP", openingRank: null, closingRank: 3000 }, 
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "ECE", year: 2022, category: "OC_M_22FP", openingRank: 3801, closingRank: 3801 },
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "ECE", year: 2022, category: "OC_F_22FP", openingRank: 3801, closingRank: 7444 },
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "ECE", year: 2022, category: "EWS_M_22FP", openingRank: 5433, closingRank: 5433 },
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "ECE", year: 2022, category: "EWS_F_22FP", openingRank: 5433, closingRank: 8092 },
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "ECE", year: 2023, category: "OC_M_23FP", openingRank: null, closingRank: 5500 }, 
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "ECE", year: 2023, category: "OC_F_23FP", openingRank: null, closingRank: 7000 }, 
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "ECE", year: 2023, category: "EWS_M_23FP", openingRank: null, closingRank: 8000 }, 
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "ECE", year: 2023, category: "EWS_F_23FP", openingRank: null, closingRank: 8000 }, 
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "IT", year: 2022, category: "OC_M_22FP", openingRank: null, closingRank: 4000 }, 
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "IT", year: 2022, category: "OC_F_22FP", openingRank: null, closingRank: 5000 }, 
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "IT", year: 2022, category: "EWS_M_22FP", openingRank: null, closingRank: 6000 }, 
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "IT", year: 2022, category: "EWS_F_22FP", openingRank: null, closingRank: 6000 }, 
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "IT", year: 2023, category: "OC_M_23FP", openingRank: null, closingRank: 5000 }, 
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "IT", year: 2023, category: "OC_F_23FP", openingRank: null, closingRank: 6000 }, 
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "IT", year: 2023, category: "EWS_M_23FP", openingRank: null, closingRank: 7000 }, 
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "IT", year: 2023, category: "EWS_F_23FP", openingRank: null, closingRank: 8000 }, 
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "EEE", year: 2022, category: "OC_M_22FP", openingRank: 4359, closingRank: 4359 },
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "EEE", year: 2022, category: "OC_F_22FP", openingRank: 4359, closingRank: 5356 },
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "EEE", year: 2022, category: "EWS_M_22FP", openingRank: 16046, closingRank: 16046 },
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "EEE", year: 2022, category: "EWS_F_22FP", openingRank: 16046, closingRank: 16046 },
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "EEE", year: 2023, category: "OC_M_23FP", openingRank: null, closingRank: 4500 }, 
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "EEE", year: 2023, category: "OC_F_23FP", openingRank: null, closingRank: 5000 }, 
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "EEE", year: 2023, category: "EWS_M_23FP", openingRank: null, closingRank: 16000 }, 
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "EEE", year: 2023, category: "EWS_F_23FP", openingRank: null, closingRank: 16000 }, 
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "MEC", year: 2022, category: "OC_M_22FP", openingRank: 15420, closingRank: 15420 },
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "MEC", year: 2022, category: "OC_F_22FP", openingRank: 15420, closingRank: 15420 },
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "MEC", year: 2022, category: "EWS_M_22FP", openingRank: 33665, closingRank: 33665 },
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "MEC", year: 2022, category: "EWS_F_22FP", openingRank: 33665, closingRank: 33665 },
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "MEC", year: 2023, category: "OC_M_23FP", openingRank: null, closingRank: 9000 }, 
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "MEC", year: 2023, category: "OC_F_23FP", openingRank: null, closingRank: 9000 }, 
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "MEC", year: 2023, category: "EWS_M_23FP", openingRank: null, closingRank: 33000 }, 
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "MEC", year: 2023, category: "EWS_F_23FP", openingRank: null, closingRank: 33000 }, 
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "CIV", year: 2022, category: "OC_M_22FP", openingRank: 13673, closingRank: 13673 },
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "CIV", year: 2022, category: "OC_F_22FP", openingRank: 13673, closingRank: 13673 },
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "CIV", year: 2022, category: "EWS_M_22FP", openingRank: 35442, closingRank: 35442 },
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "CIV", year: 2022, category: "EWS_F_22FP", openingRank: 35442, closingRank: 44136 },
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "CIV", year: 2023, category: "OC_M_23FP", openingRank: null, closingRank: 4000 }, 
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "CIV", year: 2023, category: "OC_F_23FP", openingRank: null, closingRank: 4000 }, 
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "CIV", year: 2023, category: "EWS_M_23FP", openingRank: null, closingRank: 44000 }, 
+            { collegeAcronym: "OUCE", collegeName: "University College of Engineering, Osmania University", branch: "CIV", year: 2023, category: "EWS_F_23FP", openingRank: null, closingRank: 44000 }, 
+            // CBIT
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "CSE", year: 2022, category: "OC_M_22FP", openingRank: 2135, closingRank: 2135 },
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "CSE", year: 2022, category: "OC_F_22FP", openingRank: 2135, closingRank: 2219 },
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "CSE", year: 2022, category: "EWS_M_22FP", openingRank: 2154, closingRank: 2154 },
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "CSE", year: 2022, category: "EWS_F_22FP", openingRank: 2154, closingRank: 2304 },
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "CSE", year: 2023, category: "OC_M_23FP", openingRank: null, closingRank: 2200 }, 
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "CSE", year: 2023, category: "OC_F_23FP", openingRank: null, closingRank: 2300 }, 
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "CSE", year: 2023, category: "EWS_M_23FP", openingRank: null, closingRank: 2500 }, 
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "CSE", year: 2023, category: "EWS_F_23FP", openingRank: null, closingRank: 2700 }, 
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "CSE(AI&ML)", year: 2022, category: "OC_M_22FP", openingRank: 2207, closingRank: 2207 },
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "CSE(AI&ML)", year: 2022, category: "OC_F_22FP", openingRank: 2207, closingRank: 2507 },
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "CSE(AI&ML)", year: 2022, category: "EWS_M_22FP", openingRank: 2207, closingRank: 2207 },
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "CSE(AI&ML)", year: 2022, category: "EWS_F_22FP", openingRank: 2207, closingRank: 2837 },
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "CSE(AI&ML)", year: 2023, category: "OC_M_23FP", openingRank: null, closingRank: 2400 }, 
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "CSE(AI&ML)", year: 2023, category: "OC_F_23FP", openingRank: null, closingRank: 2800 }, 
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "CSE(AI&ML)", year: 2023, category: "EWS_M_23FP", openingRank: null, closingRank: 2800 }, 
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "CSE(AI&ML)", year: 2023, category: "EWS_F_23FP", openingRank: null, closingRank: 3200 }, 
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "IT", year: 2022, category: "OC_M_22FP", openingRank: 3219, closingRank: 3219 }, 
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "IT", year: 2022, category: "OC_F_22FP", openingRank: 3219, closingRank: 4308 },
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "IT", year: 2022, category: "EWS_M_22FP", openingRank: 4472, closingRank: 4472 },
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "IT", year: 2022, category: "EWS_F_22FP", openingRank: 4472, closingRank: 4472 },
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "IT", year: 2023, category: "OC_M_23FP", openingRank: null, closingRank: 4000 }, 
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "IT", year: 2023, category: "OC_F_23FP", openingRank: null, closingRank: 5000 }, 
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "IT", year: 2023, category: "EWS_M_23FP", openingRank: null, closingRank: 5000 }, 
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "IT", year: 2023, category: "EWS_F_23FP", openingRank: null, closingRank: 5000 }, 
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "ECE", year: 2022, category: "OC_M_22FP", openingRank: 6640, closingRank: 6640 },
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "ECE", year: 2022, category: "OC_F_22FP", openingRank: 6640, closingRank: 7917 },
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "ECE", year: 2022, category: "EWS_M_22FP", openingRank: 7736, closingRank: 7736 },
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "ECE", year: 2022, category: "EWS_F_22FP", openingRank: 7736, closingRank: 10234 },
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "ECE", year: 2023, category: "OC_M_23FP", openingRank: null, closingRank: 8000 }, 
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "ECE", year: 2023, category: "OC_F_23FP", openingRank: null, closingRank: 9000 }, 
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "ECE", year: 2023, category: "EWS_M_23FP", openingRank: null, closingRank: 10000 }, 
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "ECE", year: 2023, category: "EWS_F_23FP", openingRank: null, closingRank: 12000 }, 
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "EEE", year: 2022, category: "OC_M_22FP", openingRank: 12737, closingRank: 12737 },
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "EEE", year: 2022, category: "OC_F_22FP", openingRank: 12737, closingRank: 22054 },
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "EEE", year: 2022, category: "EWS_M_22FP", openingRank: 20901, closingRank: 20901 },
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "EEE", year: 2022, category: "EWS_F_22FP", openingRank: 20901, closingRank: 33969 },
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "EEE", year: 2023, category: "OC_M_23FP", openingRank: null, closingRank: 13000 }, 
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "EEE", year: 2023, category: "OC_F_23FP", openingRank: null, closingRank: 22000 }, 
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "EEE", year: 2023, category: "EWS_M_23FP", openingRank: null, closingRank: 20000 }, 
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "EEE", year: 2023, category: "EWS_F_23FP", openingRank: null, closingRank: 34000 }, 
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "MEC", year: 2023, category: "OC_GEN_23FP", openingRank: null, closingRank: 50000 }, 
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "MEC", year: 2023, category: "EWS_GEN_23FP", openingRank: null, closingRank: 80000 }, 
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "CIV", year: 2023, category: "OC_GEN_23FP", openingRank: null, closingRank: 50000 }, 
+            { collegeAcronym: "CBIT", collegeName: "Chaitanya Bharathi Institute of Technology", branch: "CIV", year: 2023, category: "EWS_GEN_23FP", openingRank: null, closingRank: 80000 }, 
+            // VNRVJIET
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "CSE", year: 2022, category: "OC_M_22FP", openingRank: 1786, closingRank: 1786 },
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "CSE", year: 2022, category: "OC_F_22FP", openingRank: 1786, closingRank: 2595 },
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "CSE", year: 2022, category: "EWS_M_22FP", openingRank: 1915, closingRank: 1915 },
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "CSE", year: 2022, category: "EWS_F_22FP", openingRank: 1915, closingRank: 2616 },
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "CSE", year: 2023, category: "OC_M_23FP", openingRank: null, closingRank: 2000 }, 
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "CSE", year: 2023, category: "OC_F_23FP", openingRank: null, closingRank: 2600 }, 
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "CSE", year: 2023, category: "EWS_M_23FP", openingRank: null, closingRank: 2500 }, 
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "CSE", year: 2023, category: "EWS_F_23FP", openingRank: null, closingRank: 3000 }, 
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "CSE(DS)", year: 2022, category: "OC_M_22FP", openingRank: 3252, closingRank: 3252 }, 
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "CSE(DS)", year: 2022, category: "OC_F_22FP", openingRank: 3252, closingRank: 3360 },
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "CSE(DS)", year: 2022, category: "EWS_M_22FP", openingRank: 3252, closingRank: 3252 },
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "CSE(DS)", year: 2022, category: "EWS_F_22FP", openingRank: 3252, closingRank: 4051 },
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "CSE(DS)", year: 2023, category: "OC_M_23FP", openingRank: null, closingRank: 3300 }, 
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "CSE(DS)", year: 2023, category: "OC_F_23FP", openingRank: null, closingRank: 3300 }, 
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "CSE(DS)", year: 2023, category: "EWS_M_23FP", openingRank: null, closingRank: 4000 }, 
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "CSE(DS)", year: 2023, category: "EWS_F_23FP", openingRank: null, closingRank: 4000 }, 
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "CSE(AI&ML)", year: 2022, category: "OC_M_22FP", openingRank: 2906, closingRank: 2906 },
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "CSE(AI&ML)", year: 2022, category: "OC_F_22FP", openingRank: 2906, closingRank: 2906 },
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "CSE(AI&ML)", year: 2022, category: "EWS_M_22FP", openingRank: 2996, closingRank: 2996 },
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "CSE(AI&ML)", year: 2022, category: "EWS_F_22FP", openingRank: 2996, closingRank: 3307 },
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "CSE(AI&ML)", year: 2023, category: "OC_M_23FP", openingRank: null, closingRank: 3000 }, 
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "CSE(AI&ML)", year: 2023, category: "OC_F_23FP", openingRank: null, closingRank: 3000 }, 
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "CSE(AI&ML)", year: 2023, category: "EWS_M_23FP", openingRank: null, closingRank: 3500 }, 
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "CSE(AI&ML)", year: 2023, category: "EWS_F_23FP", openingRank: null, closingRank: 4000 }, 
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "IT", year: 2022, category: "OC_M_22FP", openingRank: 4520, closingRank: 4520 },
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "IT", year: 2022, category: "OC_F_22FP", openingRank: 4520, closingRank: 4553 },
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "IT", year: 2022, category: "EWS_M_22FP", openingRank: 4520, closingRank: 4520 },
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "IT", year: 2022, category: "EWS_F_22FP", openingRank: 4520, closingRank: 4637 },
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "IT", year: 2023, category: "OC_M_23FP", openingRank: null, closingRank: 4500 }, 
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "IT", year: 2023, category: "OC_F_23FP", openingRank: null, closingRank: 4500 }, 
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "IT", year: 2023, category: "EWS_M_23FP", openingRank: null, closingRank: 4600 }, 
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "IT", year: 2023, category: "EWS_F_23FP", openingRank: null, closingRank: 5000 }, 
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "ECE", year: 2022, category: "OC_M_22FP", openingRank: 8021, closingRank: 8021 },
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "ECE", year: 2022, category: "OC_F_22FP", openingRank: 8021, closingRank: 8041 },
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "ECE", year: 2022, category: "EWS_M_22FP", openingRank: 8046, closingRank: 8046 },
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "ECE", year: 2022, category: "EWS_F_22FP", openingRank: 8046, closingRank: 8140 },
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "ECE", year: 2023, category: "OC_M_23FP", openingRank: null, closingRank: 8000 }, 
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "ECE", year: 2023, category: "OC_F_23FP", openingRank: null, closingRank: 8000 }, 
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "ECE", year: 2023, category: "EWS_M_23FP", openingRank: null, closingRank: 8000 }, 
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "ECE", year: 2023, category: "EWS_F_23FP", openingRank: null, closingRank: 8000 }, 
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "EEE", year: 2022, category: "OC_M_22FP", openingRank: 17618, closingRank: 17618 },
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "EEE", year: 2022, category: "OC_F_22FP", openingRank: 17618, closingRank: 19348 },
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "EEE", year: 2022, category: "EWS_M_22FP", openingRank: 29901, closingRank: 29901 },
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "EEE", year: 2022, category: "EWS_F_22FP", openingRank: 29901, closingRank: 29901 },
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "EEE", year: 2023, category: "OC_M_23FP", openingRank: null, closingRank: 18000 }, 
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "EEE", year: 2023, category: "OC_F_23FP", openingRank: null, closingRank: 19000 }, 
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "EEE", year: 2023, category: "EWS_M_23FP", openingRank: null, closingRank: 30000 }, 
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "EEE", year: 2023, category: "EWS_F_23FP", openingRank: null, closingRank: 30000 }, 
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "MEC", year: 2022, category: "OC_M_22FP", openingRank: null, closingRank: 39000 }, 
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "MEC", year: 2022, category: "EWS_M_22FP", openingRank: null, closingRank: 49000 }, 
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "MEC", year: 2023, category: "OC_GEN_23FP", openingRank: null, closingRank: 50000 }, 
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "MEC", year: 2023, category: "EWS_GEN_23FP", openingRank: null, closingRank: 60000 }, 
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "CIV", year: 2023, category: "OC_GEN_23FP", openingRank: null, closingRank: 50000 }, 
+            { collegeAcronym: "VNRVJIET", collegeName: "VNR Vignana Jyothi Institute of Engineering and Technology", branch: "CIV", year: 2023, category: "EWS_GEN_23FP", openingRank: null, closingRank: 60000 }, 
+            // Vasavi (VCE)
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "CSE", year: 2022, category: "OC_M_22FP", openingRank: 2675, closingRank: 2675 },
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "CSE", year: 2022, category: "OC_F_22FP", openingRank: 2675, closingRank: 2675 },
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "CSE", year: 2022, category: "EWS_M_22FP", openingRank: 2675, closingRank: 2675 },
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "CSE", year: 2022, category: "EWS_F_22FP", openingRank: 2675, closingRank: 2682 },
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "CSE", year: 2023, category: "OC_M_23FP", openingRank: null, closingRank: 2700 }, 
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "CSE", year: 2023, category: "OC_F_23FP", openingRank: null, closingRank: 2700 }, 
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "CSE", year: 2023, category: "EWS_M_23FP", openingRank: null, closingRank: 2800 }, 
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "CSE", year: 2023, category: "EWS_F_23FP", openingRank: null, closingRank: 2800 }, 
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "CSE(AI&ML)", year: 2022, category: "OC_M_22FP", openingRank: 3140, closingRank: 3140 },
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "CSE(AI&ML)", year: 2022, category: "OC_F_22FP", openingRank: 3140, closingRank: 3140 },
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "CSE(AI&ML)", year: 2022, category: "EWS_M_22FP", openingRank: 3413, closingRank: 3413 },
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "CSE(AI&ML)", year: 2022, category: "EWS_F_22FP", openingRank: 3413, closingRank: 3413 },
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "CSE(AI&ML)", year: 2023, category: "OC_M_23FP", openingRank: null, closingRank: 3500 }, 
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "CSE(AI&ML)", year: 2023, category: "OC_F_23FP", openingRank: null, closingRank: 3500 }, 
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "CSE(AI&ML)", year: 2023, category: "EWS_M_23FP", openingRank: null, closingRank: 3800 }, 
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "CSE(AI&ML)", year: 2023, category: "EWS_F_23FP", openingRank: null, closingRank: 3800 }, 
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "IT", year: 2023, category: "OC_M_23FP", openingRank: null, closingRank: 4000 }, 
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "IT", year: 2023, category: "OC_F_23FP", openingRank: null, closingRank: 4000 }, 
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "IT", year: 2023, category: "EWS_M_23FP", openingRank: null, closingRank: 4200 }, 
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "IT", year: 2023, category: "EWS_F_23FP", openingRank: null, closingRank: 4200 }, 
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "ECE", year: 2022, category: "OC_M_22FP", openingRank: 10081, closingRank: 10081 },
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "ECE", year: 2022, category: "OC_F_22FP", openingRank: 10081, closingRank: 10419 },
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "ECE", year: 2022, category: "EWS_M_22FP", openingRank: 10326, closingRank: 10326 },
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "ECE", year: 2022, category: "EWS_F_22FP", openingRank: 10326, closingRank: 12021 },
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "ECE", year: 2023, category: "OC_M_23FP", openingRank: null, closingRank: 10000 }, 
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "ECE", year: 2023, category: "OC_F_23FP", openingRank: null, closingRank: 10000 }, 
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "ECE", year: 2023, category: "EWS_M_23FP", openingRank: null, closingRank: 12000 }, 
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "ECE", year: 2023, category: "EWS_F_23FP", openingRank: null, closingRank: 12000 }, 
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "EEE", year: 2022, category: "OC_M_22FP", openingRank: 17253, closingRank: 17253 },
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "EEE", year: 2022, category: "OC_F_22FP", openingRank: 17253, closingRank: 22942 },
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "EEE", year: 2022, category: "EWS_M_22FP", openingRank: 34527, closingRank: 34527 },
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "EEE", year: 2022, category: "EWS_F_22FP", openingRank: 34527, closingRank: 34527 },
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "EEE", year: 2023, category: "OC_M_23FP", openingRank: null, closingRank: 23000 }, 
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "EEE", year: 2023, category: "OC_F_23FP", openingRank: null, closingRank: 23000 }, 
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "EEE", year: 2023, category: "EWS_M_23FP", openingRank: null, closingRank: 34000 }, 
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "EEE", year: 2023, category: "EWS_F_23FP", openingRank: null, closingRank: 34000 }, 
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "MEC", year: 2022, category: "OC_GEN_22FP", openingRank: null, closingRank: 34000 }, 
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "MEC", year: 2022, category: "EWS_GEN_22FP", openingRank: null, closingRank: 89000 }, 
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "MEC", year: 2023, category: "OC_GEN_23FP", openingRank: null, closingRank: 50000 }, 
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "MEC", year: 2023, category: "EWS_GEN_23FP", openingRank: null, closingRank: 90000 }, 
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "CIV", year: 2022, category: "OC_GEN_22FP", openingRank: null, closingRank: 34000 }, 
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "CIV", year: 2022, category: "EWS_GEN_22FP", openingRank: null, closingRank: 89000 }, 
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "CIV", year: 2023, category: "OC_GEN_23FP", openingRank: null, closingRank: 50000 }, 
+            { collegeAcronym: "VCE", collegeName: "Vasavi College of Engineering", branch: "CIV", year: 2023, category: "EWS_GEN_23FP", openingRank: null, closingRank: 90000 }, 
+            // GRIET
+            { collegeAcronym: "GRIET", collegeName: "Gokaraju Rangaraju Institute of Engineering and Technology", branch: "CSE", year: 2022, category: "OC_M_22FP", openingRank: null, closingRank: 5127 }, 
+            { collegeAcronym: "GRIET", collegeName: "Gokaraju Rangaraju Institute of Engineering and Technology", branch: "CSE", year: 2022, category: "OC_F_22FP", openingRank: null, closingRank: 5244 }, 
+            { collegeAcronym: "GRIET", collegeName: "Gokaraju Rangaraju Institute of Engineering and Technology", branch: "CSE", year: 2022, category: "EWS_F_22FP", openingRank: null, closingRank: 5551 }, 
+            { collegeAcronym: "GRIET", collegeName: "Gokaraju Rangaraju Institute of Engineering and Technology", branch: "IT", year: 2022, category: "OC_F_22FP", openingRank: null, closingRank: 8761 }, 
+            { collegeAcronym: "GRIET", collegeName: "Gokaraju Rangaraju Institute of Engineering and Technology", branch: "IT", year: 2022, category: "EWS_F_22FP", openingRank: null, closingRank: 9114 }, 
+            { collegeAcronym: "GRIET", collegeName: "Gokaraju Rangaraju Institute of Engineering and Technology", branch: "ECE", year: 2022, category: "OC_F_22FP", openingRank: null, closingRank: 11900 }, 
+            { collegeAcronym: "GRIET", collegeName: "Gokaraju Rangaraju Institute of Engineering and Technology", branch: "ECE", year: 2022, category: "EWS_M_22FP", openingRank: null, closingRank: 11900 }, 
+            { collegeAcronym: "GRIET", collegeName: "Gokaraju Rangaraju Institute of Engineering and Technology", branch: "EEE", year: 2022, category: "OC_F_22FP", openingRank: null, closingRank: 33800 }, 
+            { collegeAcronym: "GRIET", collegeName: "Gokaraju Rangaraju Institute of Engineering and Technology", branch: "EEE", year: 2022, category: "EWS_M_22FP", openingRank: null, closingRank: 40300 }, 
+            // CVRCE
+            { collegeAcronym: "CVRCE", collegeName: "CVR College of Engineering", branch: "CSE", year: 2022, category: "OC_M_22FP", openingRank: null, closingRank: 5161 }, 
+            { collegeAcronym: "CVRCE", collegeName: "CVR College of Engineering", branch: "CSE", year: 2022, category: "OC_F_22FP", openingRank: null, closingRank: 6038 }, 
+            { collegeAcronym: "CVRCE", collegeName: "CVR College of Engineering", branch: "CSE", year: 2022, category: "EWS_M_22FP", openingRank: null, closingRank: 5406 }, 
+            { collegeAcronym: "CVRCE", collegeName: "CVR College of Engineering", branch: "CSE", year: 2022, category: "EWS_F_22FP", openingRank: null, closingRank: 6146 }, 
+            { collegeAcronym: "CVRCE", collegeName: "CVR College of Engineering", branch: "ECE", year: 2022, category: "OC_GEN_22FP", openingRank: null, closingRank: 12500 }, 
+            { collegeAcronym: "CVRCE", collegeName: "CVR College of Engineering", branch: "IT", year: 2022, category: "OC_GEN_22FP", openingRank: null, closingRank: 8500 }, 
+            { collegeAcronym: "CVRCE", collegeName: "CVR College of Engineering", branch: "EEE", year: 2022, category: "OC_GEN_22FP", openingRank: null, closingRank: 39000 }, 
+            // Vardhaman (VCEH)
+            { collegeAcronym: "VCEH", collegeName: "Vardhaman College of Engineering", branch: "CSE", year: 2022, category: "OC_GEN_22FP", openingRank: null, closingRank: 13000 }, 
+            { collegeAcronym: "VCEH", collegeName: "Vardhaman College of Engineering", branch: "ECE", year: 2022, category: "OC_GEN_22FP", openingRank: null, closingRank: 18000 }, 
+            // MGIT
+            { collegeAcronym: "MGIT", collegeName: "Mahatma Gandhi Institute of Technology", branch: "CSE", year: 2022, category: "OC_GEN_22FP", openingRank: null, closingRank: 8500 }, 
+            { collegeAcronym: "MGIT", collegeName: "Mahatma Gandhi Institute of Technology", branch: "ECE", year: 2022, category: "OC_GEN_22FP", openingRank: null, closingRank: 12000 }, 
+            // SNIST
+            { collegeAcronym: "SNIST", collegeName: "Sreenidhi Institute of Science & Technology", branch: "CSE", year: 2022, category: "OC_GEN_22FP", openingRank: null, closingRank: 5000 }, 
+            { collegeAcronym: "SNIST", collegeName: "Sreenidhi Institute of Science & Technology", branch: "ECE", year: 2022, category: "OC_GEN_22FP", openingRank: null, closingRank: 10000 }, 
+            // BVRITN (BVRIT Narsapur)
+            { collegeAcronym: "BVRITN", collegeName: "B.V. Raju Institute of Technology, Narsapur", branch: "CSE", year: 2022, category: "OC_GEN_22FP", openingRank: null, closingRank: 7500 }, 
+            { collegeAcronym: "BVRITN", collegeName: "B.V. Raju Institute of Technology, Narsapur", branch: "ECE", year: 2022, category: "OC_GEN_22FP", openingRank: null, closingRank: 15000 }, 
+            // ANURAG
+            { collegeAcronym: "ANURAG", collegeName: "Anurag University", branch: "CSE", year: 2022, category: "OC_GEN_22FP", openingRank: null, closingRank: 7000 }, 
+            { collegeAcronym: "ANURAG", collegeName: "Anurag University", branch: "IT", year: 2022, category: "OC_GEN_22FP", openingRank: null, closingRank: 9000 }, 
+            { collegeAcronym: "ANURAG", collegeName: "Anurag University", branch: "ECE", year: 2022, category: "OC_GEN_22FP", openingRank: null, closingRank: 15000 }, 
+            // KITSW
+            { collegeAcronym: "KITSW", collegeName: "Kakatiya Institute of Technology and Science, Warangal", branch: "CSE", year: 2023, category: "OC_GEN_23R1", openingRank: null, closingRank: 13000 }, 
+            { collegeAcronym: "KITSW", collegeName: "Kakatiya Institute of Technology and Science, Warangal", branch: "ECE", year: 2023, category: "OC_GEN_23R1", openingRank: null, closingRank: 19000 }, 
+            // MVSR
+            { collegeAcronym: "MVSR", collegeName: "MVSR Engineering College, Hyderabad", branch: "CSE", year: 2022, category: "OC_GEN_22FP", openingRank: null, closingRank: 11000 }, 
+            { collegeAcronym: "MVSR", collegeName: "MVSR Engineering College, Hyderabad", branch: "ECE", year: 2022, category: "OC_GEN_22FP", openingRank: null, closingRank: 18000 }, 
+        ],
+        collegeNameMappings: {
+            "JNTUHCEH": "JNTUH College of Engineering, Hyderabad",
+            "OUCE": "University College of Engineering, Osmania University",
+            "CBIT": "Chaitanya Bharathi Institute of Technology",
+            "VNRVJIET": "VNR Vignana Jyothi Institute of Engineering and Technology",
+            "VCE": "Vasavi College of Engineering",
+            "GRIET": "Gokaraju Rangaraju Institute of Engineering and Technology",
+            "CVRCE": "CVR College of Engineering",
+            "MGIT": "Mahatma Gandhi Institute of Technology",
+            "JNTUS": "JNTUH College of Engineering, Sultanpur",
+            "VCEH": "Vardhaman College of Engineering", 
+            "BVRITN": "B.V. Raju Institute of Technology, Narsapur", 
+            "IARE": "Institute of Aeronautical Engineering", 
+            "ANURAG": "Anurag University", 
+            "KITSW": "Kakatiya Institute of Technology and Science, Warangal", 
+            "KMIT": "Keshav Memorial Institute of Technology", 
+            "SNIST": "Sreenidhi Institute of Science & Technology", 
+            "MVSR": "MVSR Engineering College, Hyderabad", 
+        },
+        categoryDisplayNames: {
+            "OC_GEN_R1": "OC General (2024 R1)",
+            "EWS_M_FP": "EWS Male (2023 Final Phase)", 
+            "EWS_F_FP": "EWS Female (2023 Final Phase)",
+            "OC_B_FP": "OC Boys (2023 Final Phase)", 
+            "OC_G_FP": "OC Girls (2023 Final Phase)", 
+            "OC_GEN_FP": "OC General (2023 Final Phase)",
+            "OC_M_23FP": "OC Male (2023 Final Phase)",
+            "OC_F_23FP": "OC Female (2023 Final Phase)",
+            "EWS_M_23FP": "EWS Male (2023 Final Phase)",
+            "EWS_F_23FP": "EWS Female (2023 Final Phase)",
+            "OC_GEN_23FP": "OC General (2023 Final Phase)",
+            "EWS_GEN_23FP": "EWS General (2023 Final Phase)",
+            "OC_M_22FP": "OC Male (2022 Final Phase)",
+            "OC_F_22FP": "OC Female (2022 Final Phase)",
+            "EWS_M_22FP": "EWS Male (2022 Final Phase)",
+            "EWS_F_22FP": "EWS Female (2022 Final Phase)",
+            "EWS_GEN_22FP": "EWS General (2022 Final Phase)",
+            "OC_GEN_22FP": "OC General (2022 Final Phase)",
+            "OC_GEN_23R1": "OC General (2023 Round 1)"
+        },
+        finalCutoffData: [], // To be populated by processData
+
+        processData: function() {
+            let combinedData = [...this.existingCutoffData2024];
+            const collegesWithNewGranular2023Data = new Set(this.newData2022_2023.filter(d => d.year === 2023 && (d.category.includes("_M_") || d.category.includes("_F_"))).map(d => d.collegeAcronym));
+            
+            const filteredExisting2023 = this.existingCutoffData2023.filter(item => {
+                if (item.year === 2023) {
+                    if (collegesWithNewGranular2023Data.has(item.collegeAcronym)) {
+                        if (item.category === "OC_GEN_FP" || item.category === "OC_B_FP" || item.category === "OC_G_FP") {
+                            const hasSpecificNewData = this.newData2022_2023.some(newItem => 
+                                newItem.year === 2023 && 
+                                newItem.collegeAcronym === item.collegeAcronym && 
+                                newItem.branch === item.branch &&
+                                (newItem.category === `OC_M_23FP` || newItem.category === `OC_F_23FP`)
+                            );
+                            if (hasSpecificNewData) return false; 
+                        }
+                         if (item.category.startsWith("EWS_") && (item.category.endsWith("_FP") && !(item.category.includes("_M_") || item.category.includes("_F_")) ) ) {
+                             const hasSpecificNewEWSData = this.newData2022_2023.some(newItem => 
+                                newItem.year === 2023 && 
+                                newItem.collegeAcronym === item.collegeAcronym && 
+                                newItem.branch === item.branch &&
+                                (newItem.category === `EWS_M_23FP` || newItem.category === `EWS_F_23FP`)
+                            );
+                            if (hasSpecificNewEWSData) return false;
+                         }
+                    }
+                }
+                return true; 
+            });
+
+            combinedData = combinedData.concat(filteredExisting2023, this.newData2022_2023);
+            combinedData.forEach(item => {
+                if (this.collegeNameMappings[item.collegeAcronym]) {
+                    item.collegeName = this.collegeNameMappings[item.collegeAcronym];
+                } else if (!item.collegeName && item.collegeAcronym) {
+                    item.collegeName = item.collegeAcronym; 
+                }
+            });
+            
+            const uniqueData = [];
+            const seenKeys = new Set();
+            combinedData.forEach(item => {
+                const key = `${item.collegeAcronym}-${item.branch}-${item.year}-${item.category}-${item.closingRank}-${item.openingRank}`;
+                if (!seenKeys.has(key)) {
+                    uniqueData.push(item);
+                    seenKeys.add(key);
+                }
+            });
+            this.finalCutoffData = uniqueData;
+        }
+    };
+
+    DATA_STORE.processData(); // Initialize the finalCutoffData
+
